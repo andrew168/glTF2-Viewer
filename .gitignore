@@ -16,3 +16,6 @@ desktop.ini
 .zed
 .idea
 .project
+/.vs/glTF2-Viewer/v17
+/glTF2-Viewer.vcxproj.filters
+/glTF2-Viewer.vcxproj.user
