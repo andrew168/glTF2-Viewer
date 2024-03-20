@@ -7,12 +7,6 @@ import Buefy from 'buefy';
 Vue.use(VueRx, { Subject });
 Vue.use(Buefy);
 
-// general components
-Vue.component('json-to-ui-template', {
-    props: ['data', 'isinner'],
-    template:'#jsonToUITemplate'
-});
-
 export const app = new Vue({
     domStreams: ['modelChanged$', 'flavourChanged$', 'sceneChanged$', 'cameraChanged$',
         'environmentChanged$', 'debugchannelChanged$', 'tonemapChanged$', 'skinningChanged$',
