@@ -92,38 +92,7 @@
         <div class="column" id="canvasUI">
             <canvas id="canvas">No
                 Canvas!</canvas>
-        </div>
-
-        <div class="column is-narrow is-hidden-mobile">
-            <!-- UI -->
-            <div id="app" v-bind:class="[uiVisible ? '' : 'is-hidden']">
-                <b-tabs id="tabsContainer" vertical position="is-right" v-model="activeTab"
-                    v-bind:class="[tabsHidden ? 'is-flex-wrap-nowrap hideTabs' : 'is-flex-wrap-nowrap']"
-                    type="is-toggle" v-bind:animated="false">
-
-                    <b-tab-item label="Animation" icon="video" class="tabItemScrollable tab-item">
-                        <div class="tabContent">
-                            <img src="assets/ui/Navigation_right_20px.svg" width="30px"
-                                @click="collapseActiveTab($event, 2)">
-                            <h2 class="title is-spaced">Animation</h2>
-                            <label class="subtitle">Animation Controls</label>
-                          
-                            <b-field label="Animations"
-                                v-bind:style="[animations.length == 0 ? {'display': 'none'} : {}]">
-                                <b-field v-for="animation in animations" v-bind:key="animation.index">
-                                    <b-checkbox v-bind:native-value="animation.index" v-model="selectedAnimations"
-                                        :disabled="disabledAnimations.includes(animation.index)">
-                                        {{ animation.title }}
-                                    </b-checkbox>
-                                </b-field>
-                            </b-field>
-                        </div>
-                    </b-tab-item>
-
-
-                </b-tabs>
-            </div>
-        </div>
+        </div>  
     </div>
 </body>
 
