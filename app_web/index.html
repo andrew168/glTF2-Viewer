@@ -90,12 +90,8 @@
 
     <div class="columns">
         <div class="column" id="canvasUI">
-            <canvas id="canvas" @mousemove="mouseMove">No
+            <canvas id="canvas">No
                 Canvas!</canvas>
-            <div class="canvasUIMaximize">
-                <img v-bind:src="[fullscreen ? 'assets/ui/Icon_Collapse.svg' : 'assets/ui/Icon_Expand.svg']"
-                    @click="toggleFullscreen()" ref="fullscreenIcon" class="maximizeCanvasIcon" width="30px">
-        </div>
         </div>
 
         <div class="column is-narrow is-hidden-mobile">

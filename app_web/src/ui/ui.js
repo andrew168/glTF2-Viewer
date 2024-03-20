@@ -250,24 +250,6 @@ new Vue({
     },
     methods:
     {
-        toggleFullscreen() {
-            if (this.fullscreen) {
-                app.show();
-            } else {
-                app.hide();
-            }
-            this.fullscreen = !this.fullscreen;
-        },
-        mouseMove() {
-            this.$refs.fullscreenIcon.style.display = "block";
-            this.setFullscreenIconTimer();
-        },
-        setFullscreenIconTimer() {
-            clearTimeout(this.timer);
-            this.timer = window.setTimeout( () => {
-                this.$refs.fullscreenIcon.style.display = "none";
-            }, 1000);
-        }
     }
 
 }).$mount('#canvasUI');
