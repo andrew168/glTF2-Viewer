@@ -181,8 +181,7 @@ class UIModel
             } else {
                 this.app.materialVariants = ["None"];
             }
-
-            this.app.setAnimationState(true);
+            
             this.app.animations = gltf.animations.map((animation, index) => ({
                 title: animation.name ?? `Animation ${index}`,
                 index: index

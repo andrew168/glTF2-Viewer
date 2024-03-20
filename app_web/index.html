@@ -107,9 +107,7 @@
                                 @click="collapseActiveTab($event, 2)">
                             <h2 class="title is-spaced">Animation</h2>
                             <label class="subtitle">Animation Controls</label>
-                            <toggle-button v-stream:buttonclicked="animationPlayChanged$" ontext="Pause" offtext="Play"
-                                ref="animationState"></toggle-button>
-
+                          
                             <b-field label="Animations"
                                 v-bind:style="[animations.length == 0 ? {'display': 'none'} : {}]">
                                 <b-field v-for="animation in animations" v-bind:key="animation.index">

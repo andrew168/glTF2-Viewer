@@ -8,33 +8,6 @@ Vue.use(VueRx, { Subject });
 Vue.use(Buefy);
 
 // general components
-Vue.component('toggle-button', {
-    props: ['ontext', 'offtext'],
-    template:'#toggleButtonTemplate',
-    data(){
-        return {
-            name: "Play",
-            isOn: false
-        };
-    },
-    mounted(){
-        this.name = this.ontext;
-    },
-    methods:
-    {
-        buttonclicked: function()
-        {
-            this.isOn = !this.isOn;
-            this.name = this.isOn ? this.ontext : this.offtext;
-            this.$emit('buttonclicked', this.isOn);
-        },
-        setState: function(value)
-        {
-            this.isOn = value;
-            this.name = this.isOn ? this.ontext : this.offtext;
-        }
-    }
-});
 Vue.component('json-to-ui-template', {
     props: ['data', 'isinner'],
     template:'#jsonToUITemplate'
@@ -145,14 +118,10 @@ export const app = new Vue({
     },
     methods:
     {
-        setAnimationState: function(value)
-        {
-            this.$refs.animationState.setState(value);
-        },
         iblTriggered: function()
         {
             if(this.ibl == false)
-            {
+            {   
                 this.environmentVisiblePrefState = this.renderEnv;
                 this.renderEnv = false;
             }
