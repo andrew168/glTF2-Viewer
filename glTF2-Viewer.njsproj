@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{eb21faa7-da4b-4540-b9d6-87a4817cbad6}</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <StartupFile />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">17.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Content Include="app_web\index.html" />
+    <Content Include="app_web\main.js" />
+    <Content Include="app_web\package-lock.json" />
+    <Content Include="app_web\package.json" />
+    <Content Include="app_web\README.md" />
+    <Content Include="app_web\rollup.config.js" />
+    <Content Include="app_web\src\logic\uimodel.js" />
+    <Content Include="app_web\src\main.js" />
+    <Content Include="app_web\src\model_path_provider.js" />
+    <Content Include="app_web\src\ui\sass.scss" />
+    <Content Include="app_web\src\ui\ui.js" />
+    <Content Include="package.json" />
+    <Content Include="source\gltf-sample-viewer.js" />
+    <Content Include="source\GltfState\gltf_state.js" />
+    <Content Include="source\GltfView\gltf_view.js" />
+    <Content Include="source\gltf\accessor.js" />
+    <Content Include="source\gltf\animation.js" />
+    <Content Include="source\gltf\animation_sampler.js" />
+    <Content Include="source\gltf\asset.js" />
+    <Content Include="source\gltf\buffer.js" />
+    <Content Include="source\gltf\buffer_view.js" />
+    <Content Include="source\gltf\camera.js" />
+    <Content Include="source\gltf\channel.js" />
+    <Content Include="source\gltf\gltf.js" />
+    <Content Include="source\gltf\gltf_object.js" />
+    <Content Include="source\gltf\gltf_utils.js" />
+    <Content Include="source\gltf\image.js" />
+    <Content Include="source\gltf\image_based_light.js" />
+    <Content Include="source\gltf\image_mime_type.js" />
+    <Content Include="source\gltf\interpolator.js" />
+    <Content Include="source\gltf\light.js" />
+    <Content Include="source\gltf\material.js" />
+    <Content Include="source\gltf\math_utils.js" />
+    <Content Include="source\gltf\mesh.js" />
+    <Content Include="source\gltf\node.js" />
+    <Content Include="source\gltf\primitive.js" />
+    <Content Include="source\gltf\sampler.js" />
+    <Content Include="source\gltf\scene.js" />
+    <Content Include="source\gltf\skin.js" />
+    <Content Include="source\gltf\texture.js" />
+    <Content Include="source\gltf\user_camera.js" />
+    <Content Include="source\gltf\utils.js" />
+    <Content Include="source\gltf\variant.js" />
+    <Content Include="source\ibl_sampler.js" />
+    <Content Include="source\libs\hdrpng.js" />
+    <Content Include="source\libs\libktx.js" />
+    <Content Include="source\libs\libktx.wasm" />
+    <Content Include="source\libs\mikktspace.js" />
+    <Content Include="source\libs\mikktspace_bg.wasm" />
+    <Content Include="source\package.json" />
+    <Content Include="source\Renderer\environment_renderer.js" />
+    <Content Include="source\Renderer\renderer.js" />
+    <Content Include="source\Renderer\shader.js" />
+    <Content Include="source\Renderer\shaders\animation.glsl" />
+    <Content Include="source\Renderer\shaders\brdf.glsl" />
+    <Content Include="source\Renderer\shaders\cubemap.frag" />
+    <Content Include="source\Renderer\shaders\cubemap.vert" />
+    <Content Include="source\Renderer\shaders\functions.glsl" />
+    <Content Include="source\Renderer\shaders\ibl.glsl" />
+    <Content Include="source\Renderer\shaders\iridescence.glsl" />
+    <Content Include="source\Renderer\shaders\material_info.glsl" />
+    <Content Include="source\Renderer\shaders\pbr.frag" />
+    <Content Include="source\Renderer\shaders\primitive.vert" />
+    <Content Include="source\Renderer\shaders\punctual.glsl" />
+    <Content Include="source\Renderer\shaders\textures.glsl" />
+    <Content Include="source\Renderer\shaders\tonemapping.glsl" />
+    <Content Include="source\Renderer\shader_cache.js" />
+    <Content Include="source\Renderer\webgl.js" />
+    <Content Include="source\ResourceLoader\async_file_reader.js" />
+    <Content Include="source\ResourceLoader\draco.js" />
+    <Content Include="source\ResourceLoader\glb_parser.js" />
+    <Content Include="source\ResourceLoader\ktx.js" />
+    <Content Include="source\ResourceLoader\loader.js" />
+    <Content Include="source\ResourceLoader\resource_loader.js" />
+    <Content Include="source\shaders\debug.frag" />
+    <Content Include="source\shaders\fullscreen.vert" />
+    <Content Include="source\shaders\ibl_filtering.frag" />
+    <Content Include="source\shaders\panorama_to_cubemap.frag" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app_web\" />
+    <Folder Include="app_web\src\" />
+    <Folder Include="app_web\src\logic\" />
+    <Folder Include="app_web\src\ui\" />
+    <Folder Include="source\" />
+    <Folder Include="source\GltfState\" />
+    <Folder Include="source\GltfView\" />
+    <Folder Include="source\gltf\" />
+    <Folder Include="source\libs\" />
+    <Folder Include="source\Renderer\" />
+    <Folder Include="source\Renderer\shaders\" />
+    <Folder Include="source\ResourceLoader\" />
+    <Folder Include="source\shaders\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

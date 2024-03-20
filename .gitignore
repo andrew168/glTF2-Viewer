@@ -22,3 +22,4 @@ desktop.ini
 /.vs
 /assets/models
 /assets/environments
+*.user
